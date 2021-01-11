@@ -16,8 +16,14 @@ quizButton.addEventListener('click', () => {
 
     let numberOfCorrectAnswers = 0;
 
+    const firstName = prompt('What is your first name, pal?');
+    const lastName = prompt('Say, what be your last name, my new aquaintance?');
 
-    prompt('If you stacked sloths on top of each other would they maybe reach the moon and back? Yes or No.');
+    console.log(firstName);
+    console.log(lastName);
+
+
+    const firstQuestion = prompt('If you stacked sloths on top of each other would they maybe reach the moon and back? Yes or No.');
 
     prompt('Do sloths love banana cream pie? Yes or No.');
 
