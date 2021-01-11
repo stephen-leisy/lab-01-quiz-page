@@ -35,10 +35,13 @@ quizButton.addEventListener('click', () => {
 
     if (!AnswerIsYes(secondQuestion)) numberOfCorrectAnswers++;
     console.log(numberOfCorrectAnswers);
+
     const thirdQuestion = prompt('Do sloths make eye contact to read human thoughts? Yes or No.');
 
     if (AnswerIsYes(thirdQuestion)) ++numberOfCorrectAnswers;
     console.log(numberOfCorrectAnswers);
+
+    displaySpace.textContent = `You are a human named ${firstName} ${lastName} and you answered ${numberOfCorrectAnswers} questions correctly with your nifty human brain.`;
 
 
 });
