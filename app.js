@@ -25,9 +25,27 @@ quizButton.addEventListener('click', () => {
 
     const firstQuestion = prompt('If you stacked sloths on top of each other would they maybe reach the moon and back? Yes or No.');
 
+    if (firstQuestion.charAt(0).toUpperCase() === "Y") {
+        console.log('You got it!');
+    } else {
+        console.log('nope!');
+    }
+
     prompt('Do sloths love banana cream pie? Yes or No.');
 
+    if (firstQuestion.charAt(0).toUpperCase() === "Y") {
+        console.log('You got it!');
+    } else {
+        console.log('nope');
+    }
+
     prompt('Do sloths make eye contact to read human thoughts? Yes or No.');
+
+    if (firstQuestion.charAt(0).toUpperCase() === "Y") {
+        console.log('You got it!');
+    } else {
+        console.log('no way');
+    }
 
 
 })
