@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { answerIsYes } from './utils.js';
+import { answerIsYes, getTestPercentage } from './utils.js';
 
 // initialize state
 const quizButton = document.getElementById('quiz-button');
@@ -39,10 +39,6 @@ quizButton.addEventListener('click', () => {
 
     displaySpace.textContent = `You are a human named ${firstName} ${lastName} and you answered ${numberOfCorrectAnswers} questions correctly with your nifty human brain.`;
 
-
-
-
-
-
-
+    const testPercent = getTestPercentage(numberOfCorrectAnswers, numberOfQuestions);
+    testPercentDisplay.textContent = `${testPercent} %`;
 });
