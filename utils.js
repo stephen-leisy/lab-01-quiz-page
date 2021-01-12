@@ -8,10 +8,8 @@ export function answerIsYes(answerString) {
 export function getTestPercentage(correct, questions) {
     return Math.round((correct / questions) * 100);
 
-    // Math.round(percentage) = scoreAsPercentage;
+
 
 };
 
-console.log(getTestPercentage(2, 3));
-// console.log(getTestPercentage(2, 3));
 

@@ -5,6 +5,7 @@ import { answerIsYes, getTestPercentage } from './utils.js';
 const quizButton = document.getElementById('quiz-button');
 const displaySpace = document.getElementById('secret-magic-space');
 const testPercentDisplay = document.getElementById('percentage-spot')
+const changeIt = document.getElementById('change-me');
 
 // set event listeners to update state and DOM
 
@@ -41,4 +42,7 @@ quizButton.addEventListener('click', () => {
 
     const testPercent = getTestPercentage(numberOfCorrectAnswers, numberOfQuestions);
     testPercentDisplay.textContent = `${testPercent} %`;
+
+    //  started trying to change the look based on test percentage
+    // if changeIt.classList.add('perfect-pink');
 });
