@@ -1,5 +1,5 @@
 
-export function AnswerIsYes(answerString) {
+export function answerIsYes(answerString) {
     return answerString.charAt(0).toUpperCase() === 'Y';
 
 }

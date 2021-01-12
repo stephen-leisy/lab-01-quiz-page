@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { AnswerIsYes } from '../utils.js';
+import { answerIsYes } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -11,7 +11,7 @@ test('it should return true if the word starts with y', (expect) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = AnswerIsYes('yesh');
+    const actual = answerIsYes('yesh');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -25,7 +25,7 @@ test('it should return false if the word starts with n', (expect) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = AnswerIsYes('nah');
+    const actual = answerIsYes('nah');
 
     //Expect
     // Make assertions about what is expected versus the actual result

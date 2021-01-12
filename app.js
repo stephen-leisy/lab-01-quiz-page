@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { AnswerIsYes } from './utils.js';
+import { answerIsYes } from './utils.js';
 
 // initialize state
 const quizButton = document.getElementById('quiz-button');
@@ -20,15 +20,15 @@ quizButton.addEventListener('click', () => {
 
     const firstQuestion = prompt('If you stacked sloths on top of each other would they maybe reach the moon and back? Yes or No.');
 
-    if (AnswerIsYes(firstQuestion)) numberOfCorrectAnswers++;
+    if (answerIsYes(firstQuestion)) numberOfCorrectAnswers++;
 
     const secondQuestion = prompt('Do sloths love banana cream pie? Yes or No.');
 
-    if (!AnswerIsYes(secondQuestion)) numberOfCorrectAnswers++;
+    if (!answerIsYes(secondQuestion)) numberOfCorrectAnswers++;
 
     const thirdQuestion = prompt('Do sloths make eye contact to read human thoughts? Yes or No.');
 
-    if (AnswerIsYes(thirdQuestion)) ++numberOfCorrectAnswers;
+    if (answerIsYes(thirdQuestion)) ++numberOfCorrectAnswers;
 
 
     displaySpace.textContent = `You are a human named ${firstName} ${lastName} and you answered ${numberOfCorrectAnswers} questions correctly with your nifty human brain.`;

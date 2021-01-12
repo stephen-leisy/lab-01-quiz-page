@@ -17,9 +17,15 @@ body {
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
+    --color1: #9b5de5;
+    --color2: #f15bb5;
+    --color3: #fee440;
+    --color4: #00bbf9;
+
+
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: var(--color3);
 }
 
 main {
@@ -48,7 +54,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color2);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -56,7 +62,7 @@ header {
 footer {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color1);
     box-shadow: var(--shadow);
 }
 
@@ -64,6 +70,7 @@ footer {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    color: var(--color4);
 }
 
 .gutter-right {
@@ -82,6 +89,11 @@ header img {
 
 content {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color1)
 }
 
 p {
@@ -95,7 +107,7 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color2);
     box-shadow: var(--shadow);
 }
   
