@@ -17,5 +17,17 @@ i need to respond to user input in 'the cool zone' when i ask their name and 3 q
 
 then I will display the user name and the number of answers they got correct on the screen below the quiz button.
 
+The next Plan:
+present user with the percentage of questions they got right.
+
+sooo, i need a function that compared the numberOfCorrectAnswers with the total number of questions.
+
+1. create a const for number of questions (3).
+2. create a function for testPercentage 
+3. say that the score = (answer / questions * 100)
+4. return that number but with no decimal
+5. so  Math.round(number)?
+display results in secret window for user to see
+
 
 
